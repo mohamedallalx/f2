@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>لعبة الثعبان 1</title> 
+
+  <link rel="stylesheet" href="الشكل.css" />
+</head>
+
+<body>
+  <div class="card">
+    <header>
+      <div>
+        <h1>لعبة السنيك — نسخة بسيطة</h1>
+        <div class="student">عمل الطالب: <strong>محمد علال مياح</strong></div>
+      </div>
+
+      <div class="controls">
+        <div class="meta">التحكم: ← ↑ → ↓</div>
+        <button id="btnRestart" class="primary">ابدأ / أعد التشغيل</button>
+      </div>
+    </header>
+
+    <div class="game-wrap">
+      <canvas id="game" width="520" height="520"></canvas>
+
+      <div class="side">
+        <div class="score" id="score">النتيجة: 0</div>
+
+        <div class="hint">القوانين باختصار:</div>
+        <ul class="hint" style="margin-top:8px;line-height:1.7">
+          <li>أكل الفاكهة يزيد طول الثعبان والنقاط.</li>
+          <li>لو اصطدمت بالحدود أو بجسمك تنتهي اللعبة.</li>
+          <li>اضغط زر ابدأ لإعادة التشغيل.</li>
+        </ul>
+
+        <div class="footer">
+          نُفّذت بواسطة HTML و JavaScript — افتح الملف بالمتصفح.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="الحركة.js"></script>
+</body>
+</html>

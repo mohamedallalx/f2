@@ -1,0 +1,124 @@
+:root{
+  --bg:#0f1724;
+  --panel:#0b1220;
+  --accent:#10b981;
+  --muted:#94a3b8;
+}
+
+*{
+  box-sizing:border-box;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans Arabic',sans-serif;
+}
+
+body{
+  background:linear-gradient(180deg,var(--bg),#081021);
+  color:#e6eef6;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0;
+  padding:24px;
+}
+
+.card{
+  background:linear-gradient(180deg,var(--panel),#07101b);
+  padding:18px;
+  border-radius:14px;
+  box-shadow:0 8px 30px rgba(2,6,23,.6);
+  width:760px;
+  max-width:100%;
+}
+
+header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:12px;
+}
+
+h1{
+  font-size:18px;
+  margin:0;
+}
+
+.student{
+  color:var(--accent);
+  font-size:14px;
+  margin-top:4px;
+}
+
+.controls{
+  display:flex;
+  gap:8px;
+  align-items:center;
+}
+
+button{
+  background:transparent;
+  border:1px solid rgba(255,255,255,.06);
+  color:inherit;
+  padding:8px 12px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+button.primary{
+  background:var(--accent);
+  color:#022;
+  box-shadow:0 6px 18px rgba(16,185,129,.12);
+  border:0;
+}
+
+.meta{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.game-wrap{
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+}
+
+canvas{
+  background:#021024;
+  border-radius:8px;
+  display:block;
+}
+
+.side{
+  min-width:180px;
+}
+
+.score{
+  font-size:28px;
+  font-weight:700;
+  color:var(--accent);
+  margin-bottom:8px;
+}
+
+.hint{
+  color:var(--muted);
+  font-size:13px;
+}
+
+.footer{
+  margin-top:12px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+@media(max-width:640px){
+  .game-wrap{
+    flex-direction:column;
+    align-items:center;
+  }
+  .side{
+    width:100%;
+    max-width:320px;
+  }
+}
